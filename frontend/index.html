@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <h1>Mini Web App Frontend</h1>
+    <p id="api"></p>
+    <script>
+      fetch('/api')
+        .then(res => res.json())
+        .then(data => { document.getElementById('api').innerText = data.message; })
+    </script>
+  </body>
+</html>
